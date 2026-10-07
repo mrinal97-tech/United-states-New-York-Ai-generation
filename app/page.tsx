@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Adoption } from "@/components/sections/Adoption";
 import { Hero } from "@/components/sections/Hero";
 import { ReadingGuide } from "@/components/sections/ReadingGuide";
 import { DataPending } from "@/components/ui/DataPending";
@@ -17,12 +18,13 @@ export default function Home() {
       <main id="main">
         <Hero />
         <ReadingGuide />
+        <Adoption />
 
         <Section id="evidence" labelledBy="evidence-title">
           <SectionHeader
             id="evidence-title"
-            title="What the evidence says, and what it can’t"
-            dek="Verified findings from national surveys, a youth panel, and New York City’s public feedback are being connected."
+            title="Learning and thinking"
+            dek="What teens report about schoolwork, offloading and learning is being connected next."
           />
           <DataPending title="Research data loading">
             No figures are shown until they trace to a verified source.

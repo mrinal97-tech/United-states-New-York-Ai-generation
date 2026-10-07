@@ -29,3 +29,16 @@ export function canDisplay(point: Pick<EvidencePoint, "displayable" | "verificat
     (point.verification === "verified-primary" || point.verification === "audit-finding")
   );
 }
+
+const MONTHS = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."];
+
+/** "2025-09-25 to 2025-10-09" → "Sept. 25 – Oct. 9, 2025". Other formats are returned unchanged. */
+export function formatFieldDates(range: string | undefined): string | null {
+  if (!range) return null;
+  const m = range.match(/^(\d{4})-(\d{2})-(\d{2}) to (\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return range;
+  const [, y1, m1, d1, y2, m2, d2] = m;
+  const start = `${MONTHS[Number(m1) - 1]} ${Number(d1)}`;
+  const end = `${m1 === m2 && y1 === y2 ? "" : `${MONTHS[Number(m2) - 1]} `}${Number(d2)}`;
+  return y1 === y2 ? `${start} – ${end}, ${y2}` : `${start}, ${y1} – ${end}, ${y2}`;
+}

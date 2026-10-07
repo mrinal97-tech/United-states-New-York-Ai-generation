@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { MotionProvider } from "@/components/ui/MotionProvider";
 import "../styles/globals.css";
 
 // Fonts are bundled (SIL OFL 1.1, see app/fonts/) so builds never depend on a font CDN.
@@ -44,7 +45,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Skip to content
         </a>
-        {children}
+        <MotionProvider>{children}</MotionProvider>
       </body>
     </html>
   );
