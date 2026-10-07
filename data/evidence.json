@@ -2169,6 +2169,37 @@
       "methodology": null,
       "sourceUrl": "https://www.schools.nyc.gov/home/2026/03/24/new-york-city-public-schools-announces-release-of-ai-guidance-for-educators-and-school-leaders",
       "displayable": false
+    },
+    {
+      "id": "bastani-gpt-base",
+      "sourceId": "bastani-2025-pnas",
+      "rq": [
+        "RQ7"
+      ],
+      "claim": "lower grades after AI access was removed for students who had practiced with an unrestricted GPT-4 tutor, vs students with no access (randomized field experiment)",
+      "value": 17,
+      "unit": "percent-relative",
+      "base": "High school math students, one school in Turkey",
+      "baseN": null,
+      "question": "n/a (experimental outcome)",
+      "evidenceStrength": "contextual",
+      "verification": "verified-primary",
+      "caveats": [
+        "Relative reduction, not a share of students",
+        "Not U.S.; one subject; one school",
+        "The safeguarded 'GPT Tutor' largely mitigated the effect",
+        "Measures math learning, not critical thinking"
+      ],
+      "source": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+      "sourceOrganization": "Bastani et al., Proceedings of the National Academy of Sciences 122(26)",
+      "publicationDate": "2025",
+      "population": "High school math students at one school in Turkey",
+      "ageRange": "high school (ages not stated in abstract)",
+      "sampleSize": null,
+      "geography": "Turkey (single school)",
+      "methodology": "Randomized field experiment: GPT Base (ChatGPT-like) vs GPT Tutor (learning safeguards) vs no access",
+      "sourceUrl": "https://doi.org/10.1073/pnas.2422633122",
+      "displayable": true
     }
   ]
 }

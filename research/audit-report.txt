@@ -1,6 +1,6 @@
 Sources: 8
-Evidence points: 78
-Displayable: 73
+Evidence points: 79
+Displayable: 74
 
 Coverage by research question:
 RQ1   representative=10
@@ -9,19 +9,18 @@ RQ3   representative=9
 RQ4   direct=9, representative=7
 RQ5   direct=4, representative=4
 RQ6   direct=2, representative=10
-RQ7   representative=1
+RQ7   contextual=1, representative=1
 RQ8   representative=10
 RQ9   contextual=3, direct=1, limited=9, representative=1
 RQ10  (no evidence points)
 
 Errors (0):
 
-Warnings (8):
+Warnings (7):
   - source pew-2025-01-chatgpt-schoolwork: sampleSize is null
   - pew-chatbot-daily: secondary-only - do not display until confirmed
   - rand-hw-highschool: needs-check - do not display until confirmed
   - rand-ct-belief-highschool: needs-check - do not display until confirmed
   - nyc-policy-delay: secondary-only - do not display until confirmed
   - nyc-policy-moratorium: secondary-only - do not display until confirmed
-  - source bastani-2025-pnas: registered but no evidence points use it yet
   - source pew-2025-01-chatgpt-schoolwork: registered but no evidence points use it yet

@@ -42,3 +42,10 @@ Sources: NYC Public Schools *AI Public Feedback Survey* (6,491 self-selected res
 
 `research/build_evidence.py` validates every row (required fields, duplicate ids, percentage ranges, base sizes against the source sample, citations, methodology) and joins source metadata to produce `data/evidence.json`. Rows that are `needs-check` or `secondary-only` get `displayable: false`.
 
+## Experimental context (1 point)
+
+Source: Bastani et al., *Generative AI without guardrails can harm learning*, PNAS 2025: a randomized field experiment with nearly 1,000 high school math students in one Turkish school.
+
+- The 17% is a **relative** reduction in grades after AI access was removed for the unrestricted GPT-4 condition (`unit: percent-relative`), not a share of students.
+- Classed **contextual**: not U.S., one subject, math learning rather than critical thinking. The safeguarded tutor largely avoided the effect.
+

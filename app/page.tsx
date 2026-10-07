@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Adoption } from "@/components/sections/Adoption";
 import { Hero } from "@/components/sections/Hero";
+import { LearningAndThinking } from "@/components/sections/LearningAndThinking";
 import { ReadingGuide } from "@/components/sections/ReadingGuide";
 import { DataPending } from "@/components/ui/DataPending";
 import { Section } from "@/components/ui/Section";
@@ -20,11 +21,13 @@ export default function Home() {
         <ReadingGuide />
         <Adoption />
 
+        <LearningAndThinking />
+
         <Section id="evidence" labelledBy="evidence-title">
           <SectionHeader
             id="evidence-title"
-            title="Learning and thinking"
-            dek="What teens report about schoolwork, offloading and learning is being connected next."
+            title="What we know, and what we don’t"
+            dek="The evidence map and the New York City lens are being connected next."
           />
           <DataPending title="Research data loading">
             No figures are shown until they trace to a verified source.
