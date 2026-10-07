@@ -8,10 +8,15 @@ interface EvidenceNoteProps {
   evidence: EvidencePoint;
   /** Label used for unverified items that may still be mentioned (policy reports). */
   pendingLabel?: string;
+  /**
+   * For registry entries that bundle several publications (the NYC policy
+   * timeline), the specific publication this item comes from.
+   */
+  citation?: { organization: string; title: string; date: string | null; url: string };
 }
 
 /** A finding shown inline (value, if any, plus claim) with its class, source and measurement details. */
-export function EvidenceNote({ evidence, pendingLabel }: EvidenceNoteProps) {
+export function EvidenceNote({ evidence, pendingLabel, citation }: EvidenceNoteProps) {
   const verified = canDisplay(evidence);
   // Only verified values are ever printed; unverified notes show their text claim alone.
   const value = verified ? formatValue(evidence) : null;
@@ -31,7 +36,14 @@ export function EvidenceNote({ evidence, pendingLabel }: EvidenceNoteProps) {
             {pendingLabel}
           </span>
         )}
-        {evidence.sourceOrganization && evidence.source && evidence.sourceUrl ? (
+        {citation ? (
+          <SourceAttribution
+            organization={citation.organization}
+            title={citation.title}
+            publicationDate={citation.date}
+            url={citation.url}
+          />
+        ) : evidence.sourceOrganization && evidence.source && evidence.sourceUrl ? (
           <SourceAttribution
             organization={evidence.sourceOrganization.split(" (")[0]}
             title={evidence.source}
@@ -40,7 +52,10 @@ export function EvidenceNote({ evidence, pendingLabel }: EvidenceNoteProps) {
           />
         ) : null}
       </div>
-      <EvidenceDetail evidence={evidence} label={verified ? "How this was measured" : "About this report"} />
+      <EvidenceDetail
+        evidence={evidence}
+        label={evidence.unit === "text" ? "About this record" : "How this was measured"}
+      />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { Closing } from "@/components/sections/Closing";
 import { EvidenceGap } from "@/components/sections/EvidenceGap";
 import { Hero } from "@/components/sections/Hero";
 import { LearningAndThinking } from "@/components/sections/LearningAndThinking";
+import { NewYork } from "@/components/sections/NewYork";
 import { ReadingGuide } from "@/components/sections/ReadingGuide";
 
 export default function Home() {
@@ -19,9 +20,8 @@ export default function Home() {
         <Hero />
         <ReadingGuide />
         <Adoption />
-
         <LearningAndThinking />
-
+        <NewYork />
         <EvidenceGap />
         <Closing />
       </main>
