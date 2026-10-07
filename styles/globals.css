@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens.
+ * Motif: solid ink = measured; dashed outline = not measured (evidence gap).
+ * Highlighter is reserved for verified figures. Ballpoint is reserved for
+ * links, controls and focus.
+ */
+:root {
+  --paper: #f6f7f5;
+  --paper-raised: #ffffff;
+  --ink: #17212b;
+  --graphite: #56616c;
+  --rule: #d3d9d6;
+  --ballpoint: #2742b0;
+  --highlighter: #f0da55;
+  --highlighter-ink: #17212b;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #151b21;
+    --paper-raised: #1c242c;
+    --ink: #e8ece9;
+    --graphite: #a3adb5;
+    --rule: #344049;
+    --ballpoint: #8ea2ff;
+    --highlighter: #d8c24a;
+    --highlighter-ink: #151b21;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-graphite: var(--graphite);
+  --color-rule: var(--rule);
+  --color-ballpoint: var(--ballpoint);
+  --color-highlighter: var(--highlighter);
+  --color-highlighter-ink: var(--highlighter-ink);
+
+  --font-serif: var(--font-newsreader), "Iowan Old Style", Georgia, serif;
+  --font-sans: var(--font-atkinson), system-ui, sans-serif;
+
+  /* Type scale (ratio ~1.25, body set in serif at 19px). */
+  --text-note: 0.875rem;
+  --text-note--line-height: 1.45;
+  --text-ui: 1rem;
+  --text-ui--line-height: 1.5;
+  --text-body: 1.1875rem;
+  --text-body--line-height: 1.65;
+  --text-lede: 1.5rem;
+  --text-lede--line-height: 1.4;
+  --text-h3: 1.5rem;
+  --text-h3--line-height: 1.25;
+  --text-h2: clamp(2rem, 1.4rem + 2.4vw, 3rem);
+  --text-h2--line-height: 1.1;
+  --text-display: clamp(3.25rem, 1rem + 10vw, 9.5rem);
+  --text-display--line-height: 0.92;
+
+  --spacing-measure: 66ch;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-serif);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    font-optical-sizing: auto;
+  }
+
+  a {
+    color: var(--ballpoint);
+    text-underline-offset: 0.18em;
+    text-decoration-thickness: 1px;
+  }
+
+  a:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ballpoint);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--highlighter);
+    color: var(--highlighter-ink);
+  }
+}
+
+/* Respect reduced-motion preferences everywhere, including future Framer Motion work. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
