@@ -30,3 +30,11 @@ Source: *More Students Use AI for Homework, and More Believe It Harms Critical T
 - **Belief, not ability.** All critical-thinking rows measure agreement that AI use *will harm* students' critical thinking.
 - **RAND's own regression** is entered as text (`rand-regression`): correlational, about beliefs and school rules, with no effect sizes in the report.
 
+## New York City (12 points)
+
+Sources: NYC Public Schools *AI Public Feedback Survey* (6,491 self-selected responses, Mar 25–May 8 2026) and the 2026 NYCPS AI policy timeline.
+
+- **Every feedback row is `limited`** and its base is "self-selected respondents". Figures are attributed to respondents to the NYCPS public-feedback survey, never to NYC students, parents or educators as populations.
+- **Respondent mix:** educators 47%, parents/families 44% (multi-select). The number of student respondents is not verified; the student cognitive-development value is excluded until the page's table columns are checked.
+- **Policy timeline:** the March 2026 guidance release is verified from NYCPS. The June 2026 delay (Chalkbeat) and the 2026–27 moratorium for 2-K through grade 8 (ABC News) are `secondary-only` and appear only as "Policy report — verification pending".
+
