@@ -119,11 +119,20 @@ export interface ResearchSource {
   license?: string;
 }
 
+/** How far the available evidence can answer a research question. */
+export type QuestionStatus =
+  | "answerable"
+  | "partially-answerable"
+  | "perception-only"
+  | "insufficient-evidence";
+
 export interface ResearchQuestion {
   id: ResearchQuestionId;
   question: string;
+  status: QuestionStatus;
   /** Plain-language summary of what the evidence can and cannot support. */
   verdict: string;
+  /** The most relevant evidence class available for this question (a category, not a score). */
   strongestEvidence: EvidenceStrength;
 }
 

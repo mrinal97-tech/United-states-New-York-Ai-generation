@@ -1,0 +1,75 @@
+{
+  "source": "Phase 1 research audit (RESEARCH_AUDIT.md), 2026-10-07",
+  "questions": [
+    {
+      "id": "RQ1",
+      "question": "How prevalent is AI use among U.S. adolescents?",
+      "status": "answerable",
+      "strongestEvidence": "representative",
+      "verdict": "Answerable from a probability-based national survey of teens (Pew), including frequency and within-survey differences by age, race and income."
+    },
+    {
+      "id": "RQ2",
+      "question": "What are young people using generative AI for?",
+      "status": "answerable",
+      "strongestEvidence": "representative",
+      "verdict": "Answerable: Pew measures eight purposes on an all-teen base."
+    },
+    {
+      "id": "RQ3",
+      "question": "How much are young people using AI for schoolwork?",
+      "status": "answerable",
+      "strongestEvidence": "representative",
+      "verdict": "Answerable, but surveys use different definitions and are shown side by side rather than as a trend."
+    },
+    {
+      "id": "RQ4",
+      "question": "Which directly measured behaviors suggest cognitive offloading?",
+      "status": "partially-answerable",
+      "strongestEvidence": "direct",
+      "verdict": "Partly: teens report getting answers from AI and turning to it first when stuck. Whether teens verify AI output is not measured."
+    },
+    {
+      "id": "RQ5",
+      "question": "What do young people themselves report about AI's effect on their learning?",
+      "status": "perception-only",
+      "strongestEvidence": "direct",
+      "verdict": "Answerable as self-perception: teens who use AI for schoolwork report both benefits and costs. Learning itself is not measured."
+    },
+    {
+      "id": "RQ6",
+      "question": "What evidence exists about AI and critical-thinking-related outcomes among adolescents?",
+      "status": "perception-only",
+      "strongestEvidence": "representative",
+      "verdict": "Only beliefs and self-reports. No audited source measures a teen's critical thinking."
+    },
+    {
+      "id": "RQ7",
+      "question": "Can we determine whether AI use causes changes in critical thinking?",
+      "status": "insufficient-evidence",
+      "strongestEvidence": "evidence-gap",
+      "verdict": "Insufficient evidence for U.S. adolescents. One non-U.S. experiment on math learning is contextual only."
+    },
+    {
+      "id": "RQ8",
+      "question": "What demographic differences exist, within a single study?",
+      "status": "answerable",
+      "strongestEvidence": "representative",
+      "verdict": "Answerable within studies: Pew by age, race and income; RAND by gender and grade level."
+    },
+    {
+      "id": "RQ9",
+      "question": "What do we know specifically about New York City?",
+      "status": "partially-answerable",
+      "strongestEvidence": "limited",
+      "verdict": "Policy documents and a self-selected public-feedback survey only. No representative NYC student data was found."
+    },
+    {
+      "id": "RQ10",
+      "question": "What evidence is still missing?",
+      "status": "answerable",
+      "strongestEvidence": "evidence-gap",
+      "verdict": "Six documented gaps: causal effects on critical thinking, long-term effects, AI-literacy moderation, verification behavior, decision reliance and NYC student evidence."
+    }
+  ]
+}
