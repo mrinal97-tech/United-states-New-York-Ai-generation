@@ -12,3 +12,12 @@ Sources: *Teens, Social Media and AI Chatbots 2025* and *How Teens Use and View 
 - **Held back:** `pew-chatbot-daily` (28%) uses category values from AP reporting and is `secondary-only`; the site uses Pew's own wording ("about three-in-ten") until the topline is checked.
 - **Not a cognition measure:** `pew-overreliance-reason` (34%) is a coded open-end among the 354 teens who expect AI to harm society.
 
+## Common Sense Media / NORC (20 points)
+
+Source: *Teens in the AI Era: Schoolwork and Skills That Matter* (n=1,017 teens 13–17, Apr 30–May 14 2026, hybrid probability/nonprobability sample, MOE ±4.3).
+
+- **Two bases.** Use, first-action and skills items are among all teens (n=1,017). How-teens-use-AI and attitude items are among teens who use AI for schoolwork (n=665). Every row's `claim` text carries its base, so "38%" can only appear as "of teens who use AI for schoolwork say they come up with fewer of their own ideas".
+- **Multi-select items** (ways of using AI, teacher discussion topics, skills) overlap and must never be summed or stacked.
+- **Report over press release:** the teacher-safety item uses the report's 30%, not the press release's 27%.
+- **Excluded:** the users-vs-non-users skills comparison, which conflicts with the overall figure for the same item.
+
