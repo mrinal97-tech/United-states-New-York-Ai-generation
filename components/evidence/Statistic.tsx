@@ -2,6 +2,7 @@ import { DataPending } from "@/components/ui/DataPending";
 import { canDisplay, formatValue } from "@/lib/format";
 import type { EvidencePoint } from "@/lib/types";
 import { EvidenceChip } from "./EvidenceChip";
+import { EvidenceDetail } from "./EvidenceDetail";
 import { SourceAttribution } from "./SourceAttribution";
 
 interface StatisticProps {
@@ -48,6 +49,7 @@ export function Statistic({ evidence }: StatisticProps) {
             />
           ) : null}
         </div>
+        <EvidenceDetail evidence={evidence} />
       </figcaption>
     </figure>
   );

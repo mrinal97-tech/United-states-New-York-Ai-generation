@@ -1,4 +1,4 @@
-import { EVIDENCE_LABELS } from "@/lib/evidence-labels";
+import { EVIDENCE_LABELS } from "@/lib/evidence-classes";
 import type { EvidenceStrength } from "@/lib/types";
 
 /**
@@ -6,7 +6,7 @@ import type { EvidenceStrength } from "@/lib/types";
  * alone, and no shape is larger or longer than another (classes are not scores).
  * Solid marks = measured; the dashed ring = not measured.
  */
-function Mark({ strength }: { strength: EvidenceStrength }) {
+export function EvidenceMark({ strength }: { strength: EvidenceStrength }) {
   const common = { cx: 6, cy: 6, r: 4.5 };
   switch (strength) {
     case "direct":
@@ -50,7 +50,7 @@ export function EvidenceChip({ strength, detail }: EvidenceChipProps) {
       }`}
     >
       <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" className="shrink-0">
-        <Mark strength={strength} />
+        <EvidenceMark strength={strength} />
       </svg>
       <span className="font-semibold text-ink">{label}</span>
       {detail ? <span className="text-graphite">{detail}</span> : null}
