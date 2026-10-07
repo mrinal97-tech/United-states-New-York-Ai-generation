@@ -45,7 +45,7 @@ export function EvidenceChip({ strength, detail }: EvidenceChipProps) {
   const label = EVIDENCE_LABELS[strength];
   return (
     <span
-      className={`inline-flex items-center gap-2 rounded-full border px-3 py-1 font-sans text-note leading-none ${
+      className={`inline-flex items-center gap-2 whitespace-nowrap rounded-full border px-3 py-1 font-sans text-note leading-none ${
         strength === "evidence-gap" ? "border-dashed border-graphite" : "border-rule"
       }`}
     >

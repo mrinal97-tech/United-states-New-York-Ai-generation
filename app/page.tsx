@@ -1,11 +1,10 @@
 import Link from "next/link";
 import { Adoption } from "@/components/sections/Adoption";
+import { Closing } from "@/components/sections/Closing";
+import { EvidenceGap } from "@/components/sections/EvidenceGap";
 import { Hero } from "@/components/sections/Hero";
 import { LearningAndThinking } from "@/components/sections/LearningAndThinking";
 import { ReadingGuide } from "@/components/sections/ReadingGuide";
-import { DataPending } from "@/components/ui/DataPending";
-import { Section } from "@/components/ui/Section";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 
 export default function Home() {
   return (
@@ -23,16 +22,8 @@ export default function Home() {
 
         <LearningAndThinking />
 
-        <Section id="evidence" labelledBy="evidence-title">
-          <SectionHeader
-            id="evidence-title"
-            title="What we know, and what we don’t"
-            dek="The evidence map and the New York City lens are being connected next."
-          />
-          <DataPending title="Research data loading">
-            No figures are shown until they trace to a verified source.
-          </DataPending>
-        </Section>
+        <EvidenceGap />
+        <Closing />
       </main>
 
       <footer className="mx-auto w-full max-w-6xl px-5 pb-12 font-sans text-note text-graphite md:px-10">

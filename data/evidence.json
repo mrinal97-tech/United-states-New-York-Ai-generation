@@ -2200,6 +2200,183 @@
       "methodology": "Randomized field experiment: GPT Base (ChatGPT-like) vs GPT Tutor (learning safeguards) vs no access",
       "sourceUrl": "https://doi.org/10.1073/pnas.2422633122",
       "displayable": true
+    },
+    {
+      "id": "gap-causal-ct",
+      "sourceId": null,
+      "rq": [
+        "RQ7"
+      ],
+      "claim": "Does AI use cause changes in U.S. teens' critical thinking?",
+      "value": null,
+      "unit": "text",
+      "base": "n/a",
+      "baseN": null,
+      "question": "n/a",
+      "evidenceStrength": "evidence-gap",
+      "verification": "audit-finding",
+      "caveats": [
+        "No randomized or longitudinal study of U.S. teens with a measured critical-thinking outcome was found",
+        "Existing teen evidence is self-report or belief"
+      ],
+      "source": null,
+      "sourceOrganization": null,
+      "publicationDate": null,
+      "population": null,
+      "ageRange": null,
+      "sampleSize": null,
+      "geography": null,
+      "methodology": null,
+      "sourceUrl": null,
+      "displayable": true
+    },
+    {
+      "id": "gap-longitudinal",
+      "sourceId": null,
+      "rq": [
+        "RQ7",
+        "RQ10"
+      ],
+      "claim": "What happens to skills after years of AI use?",
+      "value": null,
+      "unit": "text",
+      "base": "n/a",
+      "baseN": null,
+      "question": "n/a",
+      "evidenceStrength": "evidence-gap",
+      "verification": "audit-finding",
+      "caveats": [
+        "All teen surveys found are cross-sectional; RAND has panel overlap but analyzed waves cross-sectionally"
+      ],
+      "source": null,
+      "sourceOrganization": null,
+      "publicationDate": null,
+      "population": null,
+      "ageRange": null,
+      "sampleSize": null,
+      "geography": null,
+      "methodology": null,
+      "sourceUrl": null,
+      "displayable": true
+    },
+    {
+      "id": "gap-literacy-moderation",
+      "sourceId": null,
+      "rq": [
+        "RQ6",
+        "RQ10"
+      ],
+      "claim": "Does AI literacy change how teens use AI or what it does to their thinking?",
+      "value": null,
+      "unit": "text",
+      "base": "n/a",
+      "baseN": null,
+      "question": "n/a",
+      "evidenceStrength": "evidence-gap",
+      "verification": "audit-finding",
+      "caveats": [
+        "Common Sense measures teacher AI discussion and offloading-related items in the same respondents, but no public microdata exists to test moderation",
+        "Pew measures only self-rated confidence"
+      ],
+      "source": null,
+      "sourceOrganization": null,
+      "publicationDate": null,
+      "population": null,
+      "ageRange": null,
+      "sampleSize": null,
+      "geography": null,
+      "methodology": null,
+      "sourceUrl": null,
+      "displayable": true
+    },
+    {
+      "id": "gap-verification",
+      "sourceId": null,
+      "rq": [
+        "RQ4",
+        "RQ10"
+      ],
+      "claim": "How often do teens verify or challenge AI output?",
+      "value": null,
+      "unit": "text",
+      "base": "n/a",
+      "baseN": null,
+      "question": "n/a",
+      "evidenceStrength": "evidence-gap",
+      "verification": "audit-finding",
+      "caveats": [
+        "No audited source measures teens checking AI against other sources",
+        "Common Sense's 43% is AI checking the student's work"
+      ],
+      "source": null,
+      "sourceOrganization": null,
+      "publicationDate": null,
+      "population": null,
+      "ageRange": null,
+      "sampleSize": null,
+      "geography": null,
+      "methodology": null,
+      "sourceUrl": null,
+      "displayable": true
+    },
+    {
+      "id": "gap-decisions",
+      "sourceId": null,
+      "rq": [
+        "RQ10"
+      ],
+      "claim": "Do teens rely on AI for personal decisions?",
+      "value": null,
+      "unit": "text",
+      "base": "n/a",
+      "baseN": null,
+      "question": "n/a",
+      "evidenceStrength": "evidence-gap",
+      "verification": "audit-finding",
+      "caveats": [
+        "Closest item: 12% have used chatbots for emotional support or advice (Pew)",
+        "No measure of decision reliance or independent judgment"
+      ],
+      "source": null,
+      "sourceOrganization": null,
+      "publicationDate": null,
+      "population": null,
+      "ageRange": null,
+      "sampleSize": null,
+      "geography": null,
+      "methodology": null,
+      "sourceUrl": null,
+      "displayable": true
+    },
+    {
+      "id": "gap-nyc-students",
+      "sourceId": null,
+      "rq": [
+        "RQ9",
+        "RQ10"
+      ],
+      "claim": "How do NYC teens actually use AI, and with what effects?",
+      "value": null,
+      "unit": "text",
+      "base": "n/a",
+      "baseN": null,
+      "question": "n/a",
+      "evidenceStrength": "evidence-gap",
+      "verification": "audit-finding",
+      "caveats": [
+        "No representative NYC student AI survey found",
+        "RAND's May 2025 wave oversampled New York State, but no NY or NYC estimates were published in the audited report"
+      ],
+      "source": null,
+      "sourceOrganization": null,
+      "publicationDate": null,
+      "population": null,
+      "ageRange": null,
+      "sampleSize": null,
+      "geography": null,
+      "methodology": null,
+      "sourceUrl": null,
+      "displayable": true
     }
   ]
 }

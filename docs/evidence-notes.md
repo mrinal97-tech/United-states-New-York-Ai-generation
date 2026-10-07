@@ -49,3 +49,6 @@ Source: Bastani et al., *Generative AI without guardrails can harm learning*, PN
 - The 17% is a **relative** reduction in grades after AI access was removed for the unrestricted GPT-4 condition (`unit: percent-relative`), not a share of students.
 - Classed **contextual**: not U.S., one subject, math learning rather than critical thinking. The safeguarded tutor largely avoided the effect.
 
+## Evidence gaps (6 points)
+
+Gap rows have no source and no value (`evidence-gap`, `audit-finding`). They record questions the audit could not answer: causal effects on critical thinking, long-term effects, AI-literacy moderation, verification behavior, decision reliance and NYC student evidence.
