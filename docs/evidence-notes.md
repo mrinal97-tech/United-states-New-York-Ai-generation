@@ -21,3 +21,12 @@ Source: *Teens in the AI Era: Schoolwork and Skills That Matter* (n=1,017 teens 
 - **Report over press release:** the teacher-safety item uses the report's 30%, not the press release's 27%.
 - **Excluded:** the users-vs-non-users skills comparison, which conflicts with the overall figure for the same item.
 
+## RAND American Youth Panel (11 points)
+
+Source: *More Students Use AI for Homework, and More Believe It Harms Critical Thinking* (n=1,214 enrolled youth ages 12–29, Dec 2025–Jan 2026).
+
+- **Not teen-only.** Headline rows (62% homework use, 67% critical-thinking belief) cover middle school through college and say so in their `base`.
+- **Held back:** high-school values `rand-hw-highschool` (63%) and `rand-ct-belief-highschool` (65%) were read from chart labels and are `needs-check`.
+- **Belief, not ability.** All critical-thinking rows measure agreement that AI use *will harm* students' critical thinking.
+- **RAND's own regression** is entered as text (`rand-regression`): correlational, about beliefs and school rules, with no effect sizes in the report.
+
