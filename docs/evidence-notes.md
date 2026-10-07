@@ -38,3 +38,7 @@ Sources: NYC Public Schools *AI Public Feedback Survey* (6,491 self-selected res
 - **Respondent mix:** educators 47%, parents/families 44% (multi-select). The number of student respondents is not verified; the student cognitive-development value is excluded until the page's table columns are checked.
 - **Policy timeline:** the March 2026 guidance release is verified from NYCPS. The June 2026 delay (Chalkbeat) and the 2026–27 moratorium for 2-K through grade 8 (ABC News) are `secondary-only` and appear only as "Policy report — verification pending".
 
+## Pipeline
+
+`research/build_evidence.py` validates every row (required fields, duplicate ids, percentage ranges, base sizes against the source sample, citations, methodology) and joins source metadata to produce `data/evidence.json`. Rows that are `needs-check` or `secondary-only` get `displayable: false`.
+
